@@ -4,7 +4,7 @@
     -webkit-box-sizing: border-box;
 }
 html {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%
 }
@@ -203,6 +203,9 @@ th {
     display: -webkit-flex;
     display: flex;
 }
+.flex:after{
+    content: none;
+}
 .flex-center{
     -webkit-align-items: center;
    align-items: center;
@@ -234,4 +237,35 @@ th {
 .flex-space-between{
     -webkit-justify-content: space-between;
     justify-content: space-between;
+}
+/*============================ Color ============================*/
+.color-cyan{
+    color: #3d3d3d;
+}
+.color-cyan1{
+    color: #42c5e4;
+}
+.color-cyan2{
+    color: #3ec8eb;
+}
+.color-red{
+    color: #ec1848;
+}
+.color-gay{
+    color: #9b9b9b;
+}
+.color-gay1{
+    color: #818181;
+}
+.color-gay2{
+    color: #a7a7a7;
+}
+.color-black{
+    color: #3d3d3d;
+}
+.color-white{
+    color: #fff;
+}
+.bg-01{
+    background: #efeded;
 }

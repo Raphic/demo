@@ -60,8 +60,41 @@ $(document).ready(function(){
         });
     })(jQuery);
     
-    /* Show comment 
+    /* Slider
     ========================================================*/
+    var swiper = new Swiper('.banner-slider .swiper-container', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 4500,
+        autoplayDisableOnInteraction: true
+    });
+    
+    var swiper = new Swiper('.tabs-slider-01 .swiper-container', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 4,
+        slidesPerColumn: 2,
+        paginationClickable: true,
+        spaceBetween: 15
+    });
+    var swiper = new Swiper('.tabs-slider-02 .swiper-container', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 4,
+        slidesPerColumn: 2,
+        paginationClickable: true,
+        spaceBetween: 15
+    });
+    var swiper = new Swiper('.tabs-slider-03 .swiper-container', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 4,
+        slidesPerColumn: 2,
+        paginationClickable: true,
+        spaceBetween: 15
+    });
      /* Get day
     ========================================================*/
 });

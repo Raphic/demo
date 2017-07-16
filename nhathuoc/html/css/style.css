@@ -6,6 +6,11 @@
 @charset "utf-8";
 
 /* CSS Document */
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
@@ -20,6 +25,10 @@ button{
     padding: 0;
     margin: 0;
 }
+h1,h2,h3,h4,h5,h6,h7,h8,p{
+    padding: 0;
+    margin: 0;
+}
 a{
     text-decoration: none;
     display: block;
@@ -29,46 +38,482 @@ div:after{
     content: "";
     clear: both;
 }
-.color-cyan{
+/*============================ Home ============================*/
+.wrapt{
+    width: 1280px;
+    margin: auto;
+}
+/******************** Top Page ********************/
+.top-header{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 20px;
+    background: #f3fbfd;
+    font-size: 12px;
+    font-weight: 400;
+}
+.top-header ul{
+    width: 380px;
+}
+
+.bottom-header{
+    width: 100%;
+    height: 75px;
+    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.12);
+    padding: 10px 10px 0 30px;
+}
+.logo{
+    
+}
+.search-top{
+    width: 565px;
+    height: 40px;
+    border: 3px solid #7cdcf5;
+    border-radius: 3px;
+    margin-top: 11px;
+}
+.search-top .warp-search{
+    position: relative;
+}
+.search-top .warp-search:before{
+    content: '';
+    display: block;
+    background: url(../images/icon/icon-search.png);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.search-top input[type=search]{
+    width: 450px;
+    height: 100%;
+    padding: 0 35px;
+    border: none;
+}
+.search-top input[type=search]::-webkit-input-placeholder{
+    font-size: 12px;
+    font-style: italic;
+    color: #b4b4b4;
+}
+.search-top input[type=search]::-moz-placeholder{
+    font-size: 12px;
+    font-style: italic;
+    color: #b4b4b4;
+}
+.search-top input[type=search]:-ms-input-placeholder{
+    font-size: 12px;
+    font-style: italic;
+    color: #b4b4b4;
+}
+.search-top input[type=search]:-moz-placeholder{
+    font-size: 12px;
+    font-style: italic;
+    color: #b4b4b4;
+}
+.search-top button{
+    width: 115px;
+    height: 100%;
+    font-weight: 900;
+    border-left: 3px solid #7cdcf5;
+    background: -webkit-linear-gradient(90deg, #33b8db 0%, #3cbadb 37%, #4cbdda 100%);
+    background: -moz-linear-gradient(90deg, #33b8db 0%, #3cbadb 37%, #4cbdda 100%);
+    background: -o-linear-gradient(90deg, #33b8db 0%, #3cbadb 37%, #4cbdda 100%);
+    background: -ms-linear-gradient(90deg, #33b8db 0%, #3cbadb 37%, #4cbdda 100%);
+    background: linear-gradient(0deg, #33b8db 0%, #3cbadb 37%, #4cbdda 100%);
+}
+.basket-page{
+    width: 405px;
+}
+.basket-page > div > figure{
+    margin-right: 10px;
+}
+/******************** Banner ********************/
+.banner{
+    margin-top: 15px;
+    padding: 0 15px;
+}
+.main-menu{
+    width: 256px;
+}
+.banner-slider{
+    width: 665px;
+    overflow: hidden;
+}
+.chung-nhan{
+    width: 305px;
+}
+
+.main-menu{
+    padding: 10px 0;
+    border-bottom: 3px solid #7cdcf5;
+}
+.main-menu a{
     color: #3d3d3d;
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    padding: 12px 0 12px 20px;
+    border-bottom: 1px solid #ddebef;
 }
-.color-cyan1{
-    color: #42c5e4;
+
+.main-menu a.current{
+    color: #fff;
+    background: #3ec8eb;
+    border-left: 7px solid #fae86b;
+    padding-left: 13px;
 }
-.color-red{
-    color: #ec1848;
+
+.banner-slider .ads-top{
+    
 }
-.color-gay{
-    color: #9b9b9b;
+.banner-slider .ads-top img{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.13);
+    max-width: 100%;
 }
-.color-gay1{
-    color: #818181;
+.chung-nhan > div{
+    margin-bottom: 10px;
+    padding: 15px 10px 10px;
+    background: #eaeaea;
 }
-.color-gay2{
-    color: #a7a7a7;
+.chung-nhan > div:nth-child(2){
+    background: #3ec8eb;
 }
-.color-black{
-    color: #3d3d3d;
-}
-.color-white{
+.chung-nhan > div:nth-child(2) > h2{
     color: #fff;
 }
-/*============================ Home ============================*/
-
-/******************** Top Page ********************/
-
-/******************** Logo Page ********************/
-
+.chung-nhan > div > figure{
+    margin-right: 20px;
+}
+.chung-nhan > div > h2{
+    font-size: 18px;
+    color: #737373;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.chung-nhan > div > h2 span{
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 10px;
+}
 /******************** RIght primary ********************/
 
 /*=======================================*/
 
 /******************** Slider ********************/
+.banner-slider .swiper-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    }
+.banner-slider .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide figure,
+.swiper-slide figure img{
+    width: 100%;
+    height: 100%;
+}
+.banner-slider .swiper-container{
+    border: 1px solid #dcdbdb;
+    border-radius: 5px;
+    height: calc(100% - 95px);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.13);
+}
+.banner-slider .nav-slider{
+    width: 60px;
+    height: 34px;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    z-index: 10;
+}
+.banner-slider .nav-slider > div{
+    width: 100%;
+    height: 100%;
+    background: #7acade;
+    border: 3px solid #fff;
+    border-radius: 3px;
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    position: relative;
+}
+.banner-slider .swiper-button-prev,
+.banner-slider .swiper-button-next{
+    width: 10px;
+    height: 18px;
+    top: 27px;
+    background-image: url(../images/arrow-02.png);
+    -webkit-background-size: inherit;
+    background-size: inherit;
+}
+.banner-slider .swiper-button-next{
+    transform: rotate(180deg);
+}
+/*=======================================*/
+.tabs-sp .swiper-container {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: inherit;
+}
+.tabs-sp .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 150px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.tabs-sp .swiper-button-prev,
+.tabs-sp .swiper-button-next{
+    width: 16px;
+    height: 28px;
+    margin-top: -23px;
+    border-radius: 6px;
+    border: solid 1px #d7d5d5;
+    background-color:  #ececec;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.13);
+    width: 35px;
+    height: 45px;
+    background-image: url(../images/arrow-01a.png);
+    -webkit-background-size: inherit;
+    background-size: inherit;
+}
+.tabs-sp .swiper-button-next{
+    transform: rotate(180deg);
+}
+.tabs-sp .swiper-button-prev:hover,
+.tabs-sp .swiper-button-next:hover{
+    background-image: url(../images/arrow-01b.png);
+}
+.tabs-sp .swiper-button-next:hover{
+    transform: rotate(0deg);
+}
+.tabs-sp .swiper-button-prev:hover{
+    transform: rotate(180deg);
+}
+/******************** Tabs San pham ********************/
+.tabs-sp {
+    margin-top: 20px;
+}
+.tabs-sp > div {
+    height: 0;
+    overflow: hidden;
+    background: #efeded;
+}
+.tabs-sp > div > div{
+    padding: 30px 15px;
+}
+.tabs-sp input {
+    display: none;
+}
+.tabs-sp label {
+    display: inline-block;
+    padding: 15px 20px;
+    overflow: hidden;
+    margin-bottom: -5px;
+    text-align: center;
+    color: #9b9b9b;
+    border: 3px solid transparent;
+    border-bottom: none;
+    position: relative;
+}
+/*
+.tabs-sp label[for*='1']:before {
+    content: '\f1cb';
+}
+.tabs-sp label[for*='2']:before {
+    content: '\f17d';
+}
+*/
+.tabs-sp h2{
+    display: inline-block;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.tabs-sp label[for*='3']{
+    padding: 15px 45px 15px 20px;
+}
+.tabs-sp label[for*='3']:after{
+    content: '';
+    width: 21px;
+    height: 26px;
+    display: inline-block;
+    background: url(../images/icon/icon-banchay.png);
+    position: absolute;
+    right: 20px;
+    top: 6px;
+}
 
-/******************** Cate ********************/
-
-/******************** Full ********************/
-
+.tabs-sp label:hover {
+    color: #000;
+    cursor: pointer;
+}
+.tabs-sp input:checked + label {
+    color: #000;
+    background: #fbfbfb;
+    border: 3px solid #efeded;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.tabs-sp #tab1:checked ~ #content1,
+.tabs-sp #tab2:checked ~ #content2,
+.tabs-sp #tab3:checked ~ #content3 {
+    height: auto;
+}
+@media screen and (max-width: 650px) {
+    label {
+        font-size: 0;
+    }
+    label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 400px) {
+    label {
+        padding: 15px;
+    }
+}
+/******************** Item ********************/
+.wrapt-item-01{
+    width: 100%;
+    height: 100%;
+/*    overflow: hidden;*/
+    padding: 25px 10px;
+    background: #fff;
+    position: relative;
+    margin: 0 -5px;
+}
+.wrapt-item-01 figure{
+    width: 35%;
+}
+.wrapt-item-01 figure img{
+    width: 100%;
+}
+.item-content{
+    width: 60%;
+    text-align: left;
+}
+.item-content h4{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #000;
+    height: 70px;
+}
+.item-content h5{
+    font-size: 18px;
+    font-weight: 700;
+}
+.item-content h5 span{
+    font-size: 12px;
+    text-decoration: line-through;
+    display: block;
+    margin-bottom: 5px;
+}
+.item-branch{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.item-branch .item-new{
+    width: 43px;
+    height: 43px;
+    display: none;
+    background: url(../images/icon/icon-new.png) no-repeat;
+}
+.item-branch .sale-off{
+    width: 62px;
+    height: 62px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin: -5px 0 0 -5px;
+    display: none;
+    background: url(../images/icon/icon-sale-off.png) no-repeat;
+}
+.item-branch .sale-off h6{
+    font-size: 23px;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.item-branch .sale-off span{
+    font-size: 14px;
+    display: block;
+}
+.wrapt-item-01.new .item-branch .item-new{
+    display: block;
+}
+.wrapt-item-01.saleOff .item-branch .sale-off{
+    display: block;
+}
+/******************** Home Cate ********************/
+.home-cate{
+    padding: 20px 15px;
+    margin-top: 20px;
+}
+.home-cate-header{
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ececec;
+}
+.home-cate-header h2{
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+}
+.home-cate-header button{
+    width: 160px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ececec;
+    color: #4fa5d7;
+    font-weight: 600;
+}
+.home-cate-main{
+    padding: 20px 0;
+}
+.home-cate-main .left{
+    width: 253px;
+}
+.home-cate-main .right{
+    width: calc(100% - 270px);
+}
 /******************** Half ********************/
 
 /******************** Category Page ********************/
@@ -80,3 +525,6 @@ div:after{
 /******************** Pagination ********************/
 
 /******************** Detail Page ********************/
+.ads-content{
+    padding: 15px 20px;
+}
