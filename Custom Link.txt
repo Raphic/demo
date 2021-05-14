@@ -1,0 +1,119 @@
+Script total 
+public_html/theme/fordson/templates/columns2.mustache
+
+=============================================================================
+
+Custom activity of header course to button - done
+- css : /* custom activi to buttton */
+- mustache : /home/condev/public_html/course/format/tiles/templates/course_module.mustache
+- js : n/a
+- image : reup image activity.
+
+=============================================================================
+
+Custom login page - done
+- css : /* Custom login page */
+- mustache :
+  + public_html/theme/fordson/templates/login.mustache
+  + public_html/theme/fordson/templates/core/loginform.mustache
+- js : n/a
+- image : upload image in admin -> theme -> fordson
+
+=============================================================================
+
+Set bg header and course to right - done
+- css : /* Set header in course bg to position right */, /* Set header on course overview bg to position right */
+- mustache : n/a
+- js : n/a
+- image : n/a
+
+=============================================================================
+
+Sticky course schedule on top - done
+- css : /* Stick to top */
+- mustache : n/a
+- js : n/a
+- image : n/a
+
+=============================================================================
+Add new bg unit 1-12 in course - done
+- css : /* Add bg course Unit */
+- mustache : n/a
+- js : 
+  +/public_html/theme/fordson/templates/columns2.mustache : //Add bg for unit
+- image : create new folder newimage:  /public_html/theme/newimages/course
+
+=============================================================================
+
+Custom bg and logo couse banner on dashboard - done
+- css: /* add logo programs course */
+- mustache : 
+  + public_html/blocks/myoverview/templates/view-cards.mustache
+- js : // Get level and module add to class
+- image : create new folder newimage:  /public_html/theme/newimages/banner
+
+=============================================================================
+
+Custom right menu collap - condev
+- css : /* custom button collapsing right blocks column */
+- js : 
+  +/public_html/theme/fordson/templates/columns2.mustache : // Add button collap
+- mustache : /home/condev/public_html/theme/fordson/templates/columns2.mustache - line
+- image : n/a
+
+=============================================================================
+
+Custom bg current day on calendar - done
+- css: /*Add new bg for current day on calendar*/
+- js: n/a
+- mustache : n/a
+- image : n/a
+
+=============================================================================
+
+Custom card info (detail) on dashboard - done
+- css: /*Contest - Card dasboard custom sumary*/
+- js: n/a
+- mustache: n/a
+- image:  n/a
+
+=============================================================================
+
+Fixed header and left column - contest
+
+iframeResizer.js
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css"/>
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.3.2/css/fixedColumns.bootstrap4.min.css">
+
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.datatables.net/fixedcolumns/3.3.2/js/dataTables.fixedColumns.min.js"></script>
+
+
+assessment/public_html/ila/lms/learnosity/tutorial/speaking/list-students.php
+assessment/public_html/ila/usecases/feedback/simple-scoring/feedback_ila.php
+
+condev/public_html/mod/lti/view.php
+condev/public_html/theme/fordson/templates/columns2.mustache
+
+
+https://cdnjs.com/libraries/iframe-resizer
+
+=============================================================================
+
+Restyle email table
+
+/home/condev/public_html/exts/ila/views/class/layouts/studentsaccount.php
+
+add or remove css and js from edit on moodle - email table
+
+
+Hidden Icon dashboard, badges
+https://conlive.ila.edu.vn/admin/settings.php?section=themesettingfordson#theme_fordson_iconnavheading
+
+
+email fixed header
+
+
+home work fix header remove class table-responsive
+/home/condev/public_html/exts/ila/views/admintask/layouts
