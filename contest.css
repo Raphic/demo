@@ -1,0 +1,609 @@
+/* Custom login page */
+.k-login #page-footer{
+    display : none;
+}
+.k-login .card{
+    height : calc(100vh - 1px);
+    background-color: rgba(255,255,255,.8);
+}
+.k-login .card .card-header{
+    background-color: transparent;
+    border-bottom: none;
+}
+.k-login .card .card-header img{
+    max-width: 100px;
+}
+.k-login .card-body .form-group{
+    border: 2px solid #c60c30;
+    border-radius: calc(1.5em + .75rem + 2px);
+    overflow: hidden;
+}
+.k-login .card-body .form-group .form-control{
+    background-color: transparent;
+    text-align: center;
+}
+.k-login #loginbtn,
+.k-login .potentialidp a.btn{
+    color: #fff;
+    background-color: #0655a3; 
+    border-color: #0655a3;
+    border-radius: 45px;
+    padding: .65rem !important;
+}
+
+
+/*Contesst - add bg for unit*/
+.format-tiles .tile a{
+    background-size: cover !important;
+}
+/*----unit----*/
+.format-tiles .tile.unit1 a{
+    background: url(/theme/newimages/course/unit-1.png) center center no-repeat;
+}
+.format-tiles .tile.unit2 a{
+    background: url(/theme/newimages/course/unit-2.png) center center no-repeat;
+}
+.format-tiles .tile.unit3 a{
+    background: url(/theme/newimages/course/unit-3.png) center center no-repeat;
+}
+.format-tiles .tile.unit4 a{
+    background: url(/theme/newimages/course/unit-4.png) center center no-repeat;
+}
+.format-tiles .tile.unit5 a{
+    background: url(/theme/newimages/course/unit-5.png) center center no-repeat;
+}
+.format-tiles .tile.unit6 a{
+    background: url(/theme/newimages/course/unit-6.png) center center no-repeat;
+}
+.format-tiles .tile.unit7 a{
+    background: url(/theme/newimages/course/unit-7.png) center center no-repeat;
+}
+.format-tiles .tile.unit8 a{
+    background: url(/theme/newimages/course/unit-8.png) center center no-repeat;
+}
+.format-tiles .tile.unit9 a{
+    background: url(/theme/newimages/course/unit-9.png) center center no-repeat;
+}
+.format-tiles .tile.unit10 a{
+    background: url(/theme/newimages/course/unit-10.png) center center no-repeat;
+}
+.format-tiles .tile.unit11 a{
+    background: url(/theme/newimages/course/unit-11.png) center center no-repeat;
+}
+.format-tiles .tile.unit12 a{
+    background: url(/theme/newimages/course/unit-12.png) center center no-repeat;
+}
+/*---pj---*/
+.format-tiles .tile.project1 a{
+    background: url(/theme/newimages/course/project-1.png) center center no-repeat;
+}
+.format-tiles .tile.project2 a{
+    background: url(/theme/newimages/course/project-2.png) center center no-repeat;
+}
+.format-tiles .tile.project3 a{
+    background: url(/theme/newimages/course/project-3.png) center center no-repeat;
+}
+.format-tiles .tile.project4 a{
+    background: url(/theme/newimages/course/project-4.png) center center no-repeat;
+}
+.format-tiles .tile.project5 a{
+    background: url(/theme/newimages/course/project-5.png) center center no-repeat;
+}
+.format-tiles .tile.project6 a{
+    background: url(/theme/newimages/course/project-6.png) center center no-repeat;
+}
+.format-tiles .tile.project7 a{
+    background: url(/theme/newimages/course/project-7.png) center center no-repeat;
+}
+.format-tiles .tile.project8 a{
+    background: url(/theme/newimages/course/project-8.png) center center no-repeat;
+}
+.format-tiles .tile.project9 a{
+    background: url(/theme/newimages/course/project-9.png) center center no-repeat;
+}
+.format-tiles .tile.project10 a{
+    background: url(/theme/newimages/course/project-10.png) center center no-repeat;
+}
+/*--------*/
+.format-tiles .tile[class*=mid] a,
+.format-tiles .tile.mmt a{
+    background: url(/theme/newimages/course/mid.png) center center no-repeat;
+}
+.format-tiles .tile[class*=end] a,
+.format-tiles .tile.eomt a{
+    background: url(/theme/newimages/course/end.png) center center no-repeat;
+}
+.format-tiles .tile[class*=final] a{
+    background: url(/theme/newimages/course/final.png) center center no-repeat;
+}
+.format-tiles .tile[class*=first] a,
+.format-tiles .tile[class*=welcome] a{
+    background: url(/theme/newimages/course/first.png) center center no-repeat;
+}
+.format-tiles .tile[class*=ixl] a{
+    background: url(/theme/newimages/course/IXL.png) center center no-repeat;
+}
+.format-tiles .tile[class*=skill] a{
+    background: url(/theme/newimages/course/project-skill.png) center center no-repeat;
+}
+
+
+/* Stick to top */
+#page-mod-datalynx-view #region-main,
+#learningcontent #region-main,
+#maincontent,
+#callingForm .sticky-headers,
+#homeworkForm .sticky-headers{
+     overflow-x: initial;
+}
+div[class^=datalynxview] .table{
+    font-size: 13px;
+}
+div[class^=datalynxview] .table thead tr th.header,
+.generaltable thead tr th,
+#attendaceWrap .tab-content .tab-pane .table:not(.shadow-sm) tr th,
+#homeworkForm .sticky-headers .table tr th,
+#callingForm .sticky-headers .table tr th{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 48px;
+    z-index: 2;
+}
+div[class^=datalynxview] .table thead tr th.header{
+    background-color: #7fd80a!important;
+}
+div[class^=datalynxview] .table thead tr.bg-warning th.header{
+    background-color: #ff9807!important;
+}
+.generaltable thead tr th {
+    background: white;
+    -webkit-box-shadow: 0 2px 2px -1px rgb(0 0 0 / 40%);
+    box-shadow: 0 2px 2px -1px rgb(0 0 0 / 40%);
+}
+#attendaceWrap .tab-content .tab-pane .table tr th,
+#callingForm .sticky-headers .table tr th{
+    background: #0655a3;
+}
+#homeworkForm .sticky-headers .table tr th{
+    background: #1e2429;
+}
+
+
+
+
+/* Set header in course bg to position right */
+#page-header .headerbkg .withimage,
+.customimage{
+    background-position: center right !important;
+}
+
+
+/* Set header on course overview bg to position right */
+.dashboard-card-deck .dashboard-card .dashboard-card-img{
+    background-position: right center;
+}
+
+
+/* custom activi to buttton */
+.format-tiles .course-content #section-0 > .content > ul.section *:not(.badge.badge-info):not(.tag.tag-info){
+    padding: 0;
+    margin: 0;
+}
+.format-tiles .course-content #section-0 > .content > ul.section {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.format-tiles .course-content #section-0 > .content > ul.section.nosubtiles li.activity{
+    width: 100%;
+    min-width: 100px;
+    width: inherit;
+    border: 2px solid #14a9fe;
+    border-radius: 10px;
+    text-align: center;
+    padding: .825rem .1rem .3rem!important;
+    margin: 0 .5rem 1.2rem!important;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+/*
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+*/
+}
+.format-tiles .course-content #section-0 > .content > ul.section.nosubtiles li.activity:hover,
+.format-tiles .course-content #section-0 > .content > ul.section.nosubtiles li.activity:focus{
+    color: #212529;
+/*    background-color: #14a9fe4f;*/
+    -webkit-box-shadow: 0 0.5em 0.5em -0.4em #14a9fe;
+    box-shadow: 0 0.5em 0.5em -0.4em #14a9fe;
+    -webkit-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+}
+.format-tiles .course-content #section-0 > .content > ul.section.nosubtiles li.activity:not(.modtype_lesson) a>span.activitytitle{
+    /*margin-top: .6rem !important;
+    color: #14a9fe;*/
+    display: none;
+}
+.format-tiles .course-content #section-0 > .content > .section img.activityicon{
+    width: 36px;
+    height: 36px;
+/*    height: inherit;*/
+    display: block;
+}
+.format-tiles .course-content #section-0 > .content > ul.section.nosubtiles li.activity .mod-indent-outer{
+    width: 100%;
+}
+.editing.format-tiles .course-content #section-0 > .content > ul.section.nosubtiles li.activity:hover,
+.editing.format-tiles .course-content #section-0 > .content > ul.section.nosubtiles li.activity:focus{
+    -webkit-transform: translateY(0em);
+    transform: translateY(0em);
+    z-index: 1;
+}
+
+
+
+/* add logo programs course */
+.block-myoverview .dashboard-card-deck .card.dashboard-card{
+    border: none !important;
+    -webkit-box-shadow: 0.5em 0.5em 0.5em -0.5em #a7a7a7, -0.5em -0.5em 0.5em -0.5em #a7a7a7;
+    box-shadow: 0.5em 0.5em 0.5em -0.5em #a7a7a7, -0.5em -0.5em 0.5em -0.5em #a7a7a7;
+}
+.card.dashboard-card{
+    margin-top: 1.5rem;
+}
+.card.dashboard-card:before {
+    content: '';
+    width: 100%;
+    height: 0.4rem;
+    background: #6c7b86;
+    top: -0.3rem;
+    position: absolute;
+    width: 0.5rem;
+    left: 5rem;
+    -webkit-transform: rotate(49deg);
+    transform: rotate(49deg);
+}
+.card.dashboard-card:after {
+    content: "";
+    position: absolute;
+    min-width: 65px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -.5rem;
+    left: 1.2rem;
+}
+
+/*
+.card.o.k1a:after {
+    background-image: url(/theme/newimages/banner/module-js-k6.png);
+}
+*/
+
+/*Super juniors module*/
+.card.j.k1a:after {
+    background-image: url(/theme/newimages/banner/module-sj-j1a.png);
+}
+.card.j.k1b:after {
+    background-image: url(/theme/newimages/banner/module-sj-j1b.png);
+}
+.card.j.k2a:after {
+    background-image: url(/theme/newimages/banner/module-sj-j2a.png);
+}
+.card.j.k2b:after {
+    background-image: url(/theme/newimages/banner/module-sj-j2b.png);
+}
+.card.j.k3a:after {
+    background-image: url(/theme/newimages/banner/module-sj-j3a.png);
+}
+.card.j.k3b:after {
+    background-image: url(/theme/newimages/banner/module-sj-j3b.png);
+}
+.card.j.k4a:after {
+    background-image: url(/theme/newimages/banner/module-sj-j4a.png);
+}
+.card.j.k4b:after {
+    background-image: url(/theme/newimages/banner/module-sj-j4b.png);
+}
+.card.j.k5a:after {
+    background-image: url(/theme/newimages/banner/module-sj-j5a.png);
+}
+.card.j.k5b:after {
+    background-image: url(/theme/newimages/banner/module-sj-j5b.png);
+}
+.card.j.k6a:after {
+    background-image: url(/theme/newimages/banner/module-sj-j6a.png);
+}
+.card.j.k6b:after {
+    background-image: url(/theme/newimages/banner/module-sj-j6b.png);
+}
+.card.j.k7a:after {
+    background-image: url(/theme/newimages/banner/module-sj-j7a.png);
+}
+.card.j.k7b:after {
+    background-image: url(/theme/newimages/banner/module-sj-j7b.png);
+}
+.card.j.k8a:after {
+    background-image: url(/theme/newimages/banner/module-sj-j8a.png);
+}
+.card.j.k8b:after {
+    background-image: url(/theme/newimages/banner/module-sj-j8b.png);
+}
+
+/*Smartteen module*/
+.card.s.k1a:after {
+    background-image: url(/theme/newimages/banner/module-st-s1a.png);
+}
+.card.s.k1b:after {
+    background-image: url(/theme/newimages/banner/module-st-s1b.png);
+}
+.card.s.k2a:after {
+    background-image: url(/theme/newimages/banner/module-st-s2a.png);
+}
+.card.s.k2b:after {
+    background-image: url(/theme/newimages/banner/module-st-s2b.png);
+}
+.card.s.k3a:after {
+    background-image: url(/theme/newimages/banner/module-st-s3a.png);
+}
+.card.s.k3b:after {
+    background-image: url(/theme/newimages/banner/module-st-s3b.png);
+}
+.card.s.k4a:after {
+    background-image: url(/theme/newimages/banner/module-st-s4a.png);
+}
+.card.s.k4b:after {
+    background-image: url(/theme/newimages/banner/module-st-s4b.png);
+}
+.card.s.k5a:after {
+    background-image: url(/theme/newimages/banner/module-st-s5a.png);
+}
+.card.s.k5b:after {
+    background-image: url(/theme/newimages/banner/module-st-s5b.png);
+}
+.card.s.k5c:after {
+    background-image: url(/theme/newimages/banner/module-st-s5c.png);
+}
+.card.s.k6a:after {
+    background-image: url(/theme/newimages/banner/module-st-s6a.png);
+}
+.card.s.k6b:after {
+    background-image: url(/theme/newimages/banner/module-st-s6b.png);
+}
+.card.s.k6c:after {
+    background-image: url(/theme/newimages/banner/module-st-s6c.png);
+}
+.card.s.k7a:after {
+    background-image: url(/theme/newimages/banner/module-st-s7a.png);
+}
+.card.s.k7b:after {
+    background-image: url(/theme/newimages/banner/module-st-s7b.png);
+}
+
+/*IELTS module*/
+.card.x.ki2b:after {
+    background-image: url(/theme/newimages/banner/module-ielts-2b.png);
+}
+.card.x.ki2c:after {
+    background-image: url(/theme/newimages/banner/module-ielts-2c.png);
+}
+.card.x.kip:after {
+    background-image: url(/theme/newimages/banner/module-ielts-2c.png);
+}
+
+/*JumpStart module*/
+.card.k.kk3:after {
+    background-image: url(/theme/newimages/banner/module-js-k3.png);
+}
+.card.k.kk4:after {
+    background-image: url(/theme/newimages/banner/module-js-k4.png);
+}
+.card.k.kk5:after {
+    background-image: url(/theme/newimages/banner/module-js-k5.png);
+}
+.card.k.kk6:after {
+    background-image: url(/theme/newimages/banner/module-js-k6.png);
+}
+.card.k.kk7:after {
+    background-image: url(/theme/newimages/banner/module-js-k7.png);
+}
+.card.k.kk8:after {
+    background-image: url(/theme/newimages/banner/module-js-k8.png);
+}
+.card.k.kk9:after {
+    background-image: url(/theme/newimages/banner/module-js-k9.png);
+}
+.card.k.kk10:after {
+    background-image: url(/theme/newimages/banner/module-js-k10.png);
+}
+.card.k.kk11:after {
+    background-image: url(/theme/newimages/banner/module-js-k11.png);
+}
+.card.k.kk12:after {
+    background-image: url(/theme/newimages/banner/module-js-k12.png);
+}
+.card.k.kkp:after {
+    background-image: url(/theme/newimages/banner/module-js-kpro.png);
+}
+/*Global module*/
+.card.g.kaa:after {
+    background-image: url(/theme/newimages/banner/module-ge-aa.png);
+}
+.card.g.kab:after {
+    background-image: url(/theme/newimages/banner/module-ge-ab.png);
+}
+.card.g.kac:after {
+    background-image: url(/theme/newimages/banner/module-ge-ac.png);
+}
+.card.g.kba:after {
+    background-image: url(/theme/newimages/banner/module-ge-ba.png);
+}
+.card.g.kbb:after {
+    background-image: url(/theme/newimages/banner/module-ge-bb.png);
+}
+.card.g.kbc:after {
+    background-image: url(/theme/newimages/banner/module-ge-bc.png);
+}
+.card.g.kbea:after {
+    background-image: url(/theme/newimages/banner/module-ge-ea.png);
+}
+.card.g.keb:after {
+    background-image: url(/theme/newimages/banner/module-ge-eb.png);
+}
+.card.g.kec:after {
+    background-image: url(/theme/newimages/banner/module-ge-ec.png);
+}
+.card.g.kbia:after {
+    background-image: url(/theme/newimages/banner/module-ge-ia.png);
+}
+.card.g.kib:after {
+    background-image: url(/theme/newimages/banner/module-ge-ib.png);
+}
+.card.g.kic:after {
+    background-image: url(/theme/newimages/banner/module-ge-ic.png);
+}
+.card.g.kpa:after {
+    background-image: url(/theme/newimages/banner/module-ge-pa.png);
+}
+.card.g.kpb:after {
+    background-image: url(/theme/newimages/banner/module-ge-pb.png);
+}
+.card.g.kpc:after {
+    background-image: url(/theme/newimages/banner/module-ge-pc.png);
+}
+.card.g.kua:after {
+    background-image: url(/theme/newimages/banner/module-ge-ua.png);
+}
+.card.g.kub:after {
+    background-image: url(/theme/newimages/banner/module-ge-ub.png);
+}
+.card.g.kuc:after {
+    background-image: url(/theme/newimages/banner/module-ge-uc.png);
+}
+
+
+/*None module*/
+.card.dashboard-card:after{
+    background-image: url(/theme/newimages/banner/module-nonev3.png);
+}
+
+.card.dashboard-card a{
+    position: relative;
+}
+.card.dashboard-card .card-footer.dashboard-card-footer{
+    background-color: #f8f6f8 !important;
+}
+.card.dashboard-card a .card-img.dashboard-card-img{
+    background-color: #f8f6f8;
+    background-repeat: no-repeat;
+    background-size: auto;
+/*    background-position: right 1.5rem center;*/
+/*    background-size: 23%;*/
+}
+.card.j a .card-img.dashboard-card-img{
+    background-image: url(/theme/newimages/banner/banner-sj.png) !important;
+}
+.card.s a .card-img.dashboard-card-img{
+    background-image: url(/theme/newimages/banner/banner-st.png) !important;
+}
+.card.x a .card-img.dashboard-card-img{
+    background-image: url(/theme/newimages/banner/banner-st.png) !important;
+}
+.card.k a .card-img.dashboard-card-img{
+    background-image: url(/theme/newimages/banner/banner-js.png) !important;
+}
+.card.g a .card-img.dashboard-card-img{
+    background-image: url(/theme/newimages/banner/banner-ge.png) !important;
+}
+
+
+/*Add new bg for current day on calendar*/
+.calendarwrapper .calendartable td.day.today{
+    background: #1a73e8;
+    color: #fff;
+}
+.calendarwrapper .calendartable td.day.today a{
+    color: #fff;
+}
+
+
+/*Contest - Card dasboard custom sumary*/
+.dashboard-card .card-body .k-cards{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    line-height: 0.9rem;
+/*    margin-top: 1em;*/
+}
+.dashboard-card .card-body .k-cards span{
+/*    width: max(125px, 48%);*/
+    width: 100%;
+    margin-bottom: 0.5rem;
+    color: #868e96;
+    position: relative;
+/*  margin: 0 0.5rem;*/
+}
+.dashboard-card .card-body .k-cards span:nth-child(2),
+.dashboard-card .card-body .k-cards span:nth-child(5){
+    margin-bottom: 1.2rem;
+}
+.dashboard-card .card-body .k-cards span:before,
+.dashboard-card .card-body .k-cards span:after{
+    content: '';
+    position: absolute;
+}
+.dashboard-card .card-body .k-cards span:not(:nth-child(1)):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(6)):not(:nth-child(7)):after {
+    width: 100%;
+    height: 1px;
+    bottom: -0.7rem;
+    left: 0;
+    background: rgb(255,255,255);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,1)), color-stop(0%, rgba(183,185,186,1)), color-stop(0%, rgba(183,185,186,1)), color-stop(0%, rgba(183,185,186,1)), color-stop(30%, rgba(218,221,222,1)), to(rgba(255,255,255,1)));
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(183,185,186,1) 0%, rgba(183,185,186,1) 0%, rgba(183,185,186,1) 0%, rgba(218,221,222,1) 30%, rgba(255,255,255,1) 100%);
+}
+.k-wrapt-cards .text-truncate{
+    white-space: inherit;
+}
+.k-wrapt-cards .card-body{
+    padding: 0.725em !important;
+}
+.k-wrapt-cards .text-truncate + .dropdown{
+    position: absolute;
+    right: 1rem;
+}
+.k-cards {
+    margin-left: -0.4rem;
+}
+
+/*fix resul EOMT lenoisity*/
+.lrn_widget .lrn_texteditor_editable{
+    overflow: auto !important;
+}
+
+
+/*Condev - Fix style category all course*/
+.subcategories .pagination{
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+
+

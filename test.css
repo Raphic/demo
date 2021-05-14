@@ -1,0 +1,800 @@
+@CHARSET "UTF-8";
+#attendaceWrap {
+	background: #fff;
+}
+#attendaceWrap .attLeft {
+/*Trung Tran Ngoc Nguyen - 22-09-2015 - Fix student's first name on Admin task page*/
+	width: 25%;
+	float: left;	
+}
+#attendaceWrap .attRight {
+/*Trung Tran Ngoc Nguyen - 22-09-2015 - Fix student's first name on Admin task page*/
+	margin-left:25%;
+/*Trung Tran Ngoc Nguyen - 22-09-2015 - Fix student's first name on Admin task page*/
+	width:75%;
+	overflow: auto;
+	overflow-y:hidden;
+	-ms-overflow-y:hidden;
+	padding-bottom: 5px;
+}
+#attendaceWrap>table {
+	margin-bottom: 5px;
+}
+#attendaceWrap>table tr:nth-child(odd){
+	background: #f7f7f7;
+}
+#attendaceWrap .attRight::-webkit-scrollbar{
+	height:12px;
+	background: none;
+} 
+#attendaceWrap .attRight::-webkit-scrollbar-thumb{
+	background:#ccc;
+	border-radius:8px;
+}
+#attendaceWrap table.tblStudent>tr>td{
+	padding: 8px!important;
+}
+#attendaceWrap table.tblAttendance,
+#attendaceWrap table.tblAttendance td:first-child,
+#attendaceWrap table.tblAttendance th:first-child {
+	border-left: none;
+}
+#attendaceWrap table.tblAttendance {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#attendaceWrap table.tblStudent>tbody>tr>td {
+	/*padding-left: 8px!important;*/
+	vertical-align: top;
+	padding: 0;
+	position: relative;
+}
+#attendaceWrap table.tblStudent>tbody>tr>td .dropdown-item strong{
+	display: block;
+	text-align: center;
+	margin-bottom: 0.3em;
+	margin-top: 0.5em;
+	font-size: 13px;
+}
+#attendaceWrap table.tblStudent>tbody>tr>td .dropdown-item em{
+	font-size: 12px !important;
+	font-style: normal;
+	line-height: 1.2em;
+}
+#attendaceWrap table.tblStudent>tbody>tr>td.student-name{
+	vertical-align:middle;
+	text-align: center;
+}
+#attendaceWrap table.tblStudent>tbody>tr:not(.terminatedStudent)>td.student-name{
+	vertical-align:middle;
+	text-align: center;
+	background: #8db9ff !important;
+}
+.altName{
+	font-size: 14px;
+	font-weight: bold;
+}
+#attendaceWrap table.tblStudent>tbody>tr>td.sticky-cell {
+	padding-left: 8px!important;
+}
+
+#attendaceWrap table th span {
+	font-weight: normal;
+	display: block;
+	margin-right:20px;
+	opacity:0.7;
+}
+.fixed-table {
+    /* magic */
+    width: 100%;
+    table-layout: fixed;
+    
+    /*not really necessary, removes extra white space */
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+.fixed-table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.tbl-heading th {
+	background: #f7f7f7;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff),to(#f5f5f5));
+	background: linear-gradient(top, #fff 0%,#f5f5f5 100%);
+	/*Trung Tran Ngoc Nguyen - 18-05-2015 - remove blue color on table header on IE brownser
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f5f5f5',GradientType=0 );*/
+	
+	border-bottom: solid 2px #999!important;
+}
+
+
+
+
+
+
+
+
+#attendaceWrap {
+	background: #fff;
+}
+#attendaceWrap .attLeft {
+/*Trung Tran Ngoc Nguyen - 22-09-2015 - Fix student's first name on Admin task page*/
+	width: 25%;
+	float: left;	
+}
+#attendaceWrap .attRight {
+/*Trung Tran Ngoc Nguyen - 22-09-2015 - Fix student's first name on Admin task page*/
+	margin-left:25%;
+/*Trung Tran Ngoc Nguyen - 22-09-2015 - Fix student's first name on Admin task page*/
+	width:75%;
+	overflow: auto;
+	overflow-y:hidden;
+	-ms-overflow-y:hidden;
+	padding-bottom: 5px;
+}
+#attendaceWrap>table {
+	margin-bottom: 5px;
+}
+#attendaceWrap>table tr:nth-child(odd){
+	background: #f7f7f7;
+}
+#attendaceWrap .attRight::-webkit-scrollbar{
+	height:12px;
+	background: none;
+} 
+#attendaceWrap .attRight::-webkit-scrollbar-thumb{
+	background:#ccc;
+	border-radius:8px;
+}
+#attendaceWrap table.tblStudent>tr>td{
+	padding: 8px!important;
+}
+#attendaceWrap table.tblAttendance,
+#attendaceWrap table.tblAttendance td:first-child,
+#attendaceWrap table.tblAttendance th:first-child {
+	border-left: none;
+}
+#attendaceWrap table.tblAttendance {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#attendaceWrap table.tblStudent>tbody>tr>td {
+	/*padding-left: 8px!important;*/
+	vertical-align: top;
+	padding: 0;
+	position: relative;
+}
+#attendaceWrap table.tblStudent>tbody>tr>td .dropdown-item strong{
+	display: block;
+	text-align: center;
+	margin-bottom: 0.3em;
+	margin-top: 0.5em;
+	font-size: 13px;
+}
+#attendaceWrap table.tblStudent>tbody>tr>td .dropdown-item em{
+	font-size: 12px !important;
+	font-style: normal;
+	line-height: 1.2em;
+}
+#attendaceWrap table.tblStudent>tbody>tr>td.student-name{
+	vertical-align:middle;
+	text-align: center;
+}
+#attendaceWrap table.tblStudent>tbody>tr:not(.terminatedStudent)>td.student-name{
+	vertical-align:middle;
+	text-align: center;
+	background: #8db9ff !important;
+}
+.altName{
+	font-size: 14px;
+	font-weight: bold;
+}
+#attendaceWrap table.tblStudent>tbody>tr>td.sticky-cell {
+	padding-left: 8px!important;
+}
+
+#attendaceWrap table th span {
+	font-weight: normal;
+	display: block;
+	margin-right:20px;
+	opacity:0.7;
+}
+.fixed-table {
+    /* magic */
+    width: 100%;
+    table-layout: fixed;
+    
+    /*not really necessary, removes extra white space */
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+.fixed-table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.tbl-heading th {
+	background: #f7f7f7;
+	background: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #fff),to(#f5f5f5));
+	background: linear-gradient(top, #fff 0%,#f5f5f5 100%);
+	/*Trung Tran Ngoc Nguyen - 18-05-2015 - remove blue color on table header on IE brownser
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f5f5f5',GradientType=0 );*/
+	
+	border-bottom: solid 2px #999!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Custom login page */
+.k-login #page-footer{
+    display : none;
+}
+.k-login .card{
+    height : calc(100vh - 1px);
+    background-color: rgba(255,255,255,.8);
+}
+.k-login .card .card-header{
+    background-color: transparent;
+    border-bottom: none;
+}
+.k-login .card .card-header img{
+    max-width: 100px;
+}
+.k-login .card-body .form-group{
+    border: 2px solid #c60c30;
+    border-radius: calc(1.5em + .75rem + 2px);
+    overflow: hidden;
+}
+.k-login .card-body .form-group .form-control{
+    background-color: transparent;
+    text-align: center;
+}
+.k-login #loginbtn,
+.k-login .potentialidp a.btn{
+    color: #fff;
+    background-color: #0655a3;
+    border-color: #0655a3;
+    border-radius: 45px;
+    padding: .65rem !important;
+}
+/* Set header in course bg to position right */
+#page-header .headerbkg .withimage{
+    background-position: center right !important;
+}
+/* Set header on course overview bg to position right */
+.dashboard-card-deck .dashboard-card .dashboard-card-img{
+    background-position: right center;
+}
+/* Stick to top */
+#page-mod-datalynx-view  #region-main{
+     overflow-x: initial;
+}
+div[class^=datalynxview] .table thead tr th.header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 50px;
+    background-color: #7fd80a!important;
+}
+div[class^=datalynxview] .table thead tr.bg-warning th.header{
+    background-color: #ff9807!important;
+}
+
+
+
+
+/* add logo programs course */
+.block-myoverview .dashboard-card-deck .card.dashboard-card{
+    border: none !important;
+    -webkit-box-shadow: 0.5em 0.5em 0.5em -0.5em #a7a7a7, -0.5em -0.5em 0.5em -0.5em #a7a7a7;
+    box-shadow: 0.5em 0.5em 0.5em -0.5em #a7a7a7, -0.5em -0.5em 0.5em -0.5em #a7a7a7;
+}
+.card.dashboard-card{
+    margin-top: 1.5rem;
+}
+.card.dashboard-card:before {
+    content: '';
+    width: 100%;
+    height: 0.4rem;
+    background: #6c7b86;
+    top: -0.3rem;
+    position: absolute;
+    width: 0.5rem;
+    left: 5rem;
+    -webkit-transform: rotate(49deg);
+    transform: rotate(49deg);
+}
+.card.dashboard-card:after {
+    content: "";
+    position: absolute;
+    min-width: 65px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -.5rem;
+    left: 1.2rem;
+}
+
+.card.o.k1a:after {
+    background-image: url(/theme/newimages/banner/module-js-k6.png);
+}
+.card.j.k2b:after {
+    background-image: url(/theme/newimages/banner/module-sj-j2b.png);
+}
+
+.card.s.k4a:after {
+    background-image: url(/theme/newimages/banner/module-st-s4a.png);
+}
+
+.card.k.kk6:after {
+    background-image: url(/theme/newimages/banner/module-js-k6.png);
+}
+
+.card.kundefined:after{
+    background-image: url(/theme/newimages/banner/module-none.png);
+}
+
+
+.card.dashboard-card a{
+    position: relative;
+}
+.card.dashboard-card .card-footer.dashboard-card-footer{
+    background-color: #f8f6f8 !important;
+}
+
+.card.dashboard-card a .card-img.dashboard-card-img{
+    background-color: #f8f6f8;
+    background-repeat: no-repeat;
+    background-size: auto;
+/*    background-position: right 1.5rem center;*/
+/*    background-size: 23%;*/
+}
+.card.j a .card-img.dashboard-card-img{
+    background-image: url(/theme/newimages/banner/banner-sj.png) !important;
+}
+.card.s a .card-img.dashboard-card-img{
+    background-image: url(/theme/newimages/banner/banner-st.png) !important;
+}
+.card.k a .card-img.dashboard-card-img{
+    background-image: url(/theme/newimages/banner/banner-js.png) !important;
+}
+.card.dashboard-card:after{
+    background-image: url(/theme/newimages/banner/module-none.png);
+}
+
+
+
+
+/* custom activi to buttton */
+.format-tiles .course-content #section-0 > .content > ul.section *:not(.badge.badge-info):not(.tag.tag-info){
+    padding: 0;
+    margin: 0;
+}
+.format-tiles .course-content #section-0 > .content > ul.section {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.format-tiles .course-content #section-0 > .content > ul.section.nosubtiles li.activity{
+    width: 100%;
+    min-width: 100px;
+    width: inherit;
+    border: 2px solid #14a9fe;
+    border-radius: 10px;
+    text-align: center;
+    padding: .825rem .1rem .3rem!important;
+    margin: 0 .5rem 1.2rem!important;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+/*
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+*/
+}
+.format-tiles .course-content #section-0 > .content > .section .activity .contentwithoutlink>a, 
+.format-tiles .course-content #section-0 > .content > .section .activity .activityinstance>a {
+    text-indent: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.format-tiles .course-content #section-0 > .content > ul.section.nosubtiles li.activity:not(.modtype_lesson) a>span.activitytitle{
+    /*margin-top: .6rem !important;
+    color: #14a9fe;*/
+    display: none;
+}
+.format-tiles .course-content #section-0 > .content > .section img.activityicon{
+    width: 36px;
+    height: inherit;
+    display: block;
+/*    margin-right: 0.5rem !important;*/
+}
+.format-tiles .course-content #section-0 > .content > ul.section.nosubtiles li.activity .mod-indent-outer{
+    width: 100%;
+}
+.format-tiles .course-content #section-0 > .content > ul.section.nosubtiles li.activity:hover,
+.format-tiles .course-content #section-0 > .content > ul.section.nosubtiles li.activity:focus{
+    color: #212529;
+/*    background-color: #14a9fe4f;*/
+    -webkit-box-shadow: 0 0.5em 0.5em -0.4em #14a9fe;
+    box-shadow: 0 0.5em 0.5em -0.4em #14a9fe;
+    -webkit-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+}
+
+
+
+
+/* custom button collapsing right blocks column */
+.k-overflow{
+    overflow-x: hidden;
+}
+.k-button-collap {
+    position: absolute;
+    top: 20px;
+    left: -25px;
+    background: #14a9fe;
+    width: 25px;
+    height: 55px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-top-left-radius: 50px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-bottom-left-radius: 50px;
+    border-right: none;
+    font-size: 25px;
+    color: var(--white);
+    cursor: pointer;
+}
+.no-blocks ~ .k-button-collap{
+    right: 0;
+}
+.k-button-collap:hover,
+.k-button-collap:focus{
+    background: #1087cb;
+}
+.k-active{
+   -webkit-animation-name: k-roll;
+   animation-name: k-roll;
+   -webkit-animation-duration: 1.2s;
+   animation-duration: 1.2s;
+   -webkit-animation-fill-mode: forwards;
+   animation-fill-mode: forwards;
+/*   animation-timing-function: ease-in-out;*/
+}
+.k-active i.fa{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+.k-reactive{
+   -webkit-animation-name: k-reroll;
+   animation-name: k-reroll;
+   -webkit-animation-duration: 1.2s;
+   animation-duration: 1.2s;
+   -webkit-animation-fill-mode: forwards;
+   animation-fill-mode: forwards;
+   /*animation-timing-function: ease-in-out;*/
+}
+.k-reactive i.fa{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+@-webkit-keyframes k-roll{
+/* Basic move left and right*/
+    0% {left: -25px; top: 20px}
+    50% {left: -25px; top: 20px}
+    100% {left: -25px; top: 48%}
+}
+@keyframes k-roll{
+/* Basic move left and right*/
+    0% {left: -25px; top: 20px}
+    50% {left: -25px; top: 20px}
+    100% {left: -25px; top: 48%}
+}
+
+@-webkit-keyframes k-reroll{
+/* Basic move left and right*/
+    0% {left: -25px; top: 48%}
+    50% {left: -25px; top: 48%}
+    100% {left: -25px; top: 20px}
+}
+@keyframes k-reroll{
+/* Basic move left and right*/
+    0% {left: -25px; top: 48%}
+    50% {left: -25px; top: 48%}
+    100% {left: -25px; top: 20px}
+}
+
+.no-blocks,
+.no-blocks + section,
+.has-blocks,
+.has-blocks + section,
+.has-blocks + section > aside,
+.no-blocks + section > aside{
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+}
+#region-main + section{
+    width: 250px;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+
+}
+#region-main.has-blocks + section{
+    right: 1em;
+}
+#region-main.has-blocks + section > aside{
+
+}
+
+.no-blocks{
+    width: 100%;
+}
+.no-blocks + section{
+/*    right: -33px;*/
+    right: -285px;
+}
+aside#block-region-side-pre{
+    max-height: 70vh;
+    overflow-y: auto;
+}
+/*
+.no-blocks + section > aside{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+*/
+@media screen and (max-width: 768px){
+    #region-main + section{
+        position: fixed;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    #region-main.has-blocks+section{
+        right: 0;
+    }
+    .no-blocks+section {
+        right: -250px;
+    }
+}
+@media screen and (max-width: 600px){
+    .no-blocks+section {
+        right: -235px;
+    }
+}
+@media screen and (max-width: 576px){
+    .no-blocks+section {
+        right: -250px;
+    }
+}
+
+
+
+
+/*Contesst - add bg for unit*/
+.format-tiles .tile a{
+    background-size: cover !important;
+}
+/*----unit----*/
+.format-tiles .tile.unit1 a{
+    background: url(/theme/newimages/course/unit-1.png) center center no-repeat;
+}
+.format-tiles .tile.unit2 a{
+    background: url(/theme/newimages/course/unit-2.png) center center no-repeat;
+}
+.format-tiles .tile.unit3 a{
+    background: url(/theme/newimages/course/unit-3.png) center center no-repeat;
+}
+.format-tiles .tile.unit4 a{
+    background: url(/theme/newimages/course/unit-4.png) center center no-repeat;
+}
+.format-tiles .tile.unit5 a{
+    background: url(/theme/newimages/course/unit-5.png) center center no-repeat;
+}
+.format-tiles .tile.unit6 a{
+    background: url(/theme/newimages/course/unit-6.png) center center no-repeat;
+}
+.format-tiles .tile.unit7 a{
+    background: url(/theme/newimages/course/unit-7.png) center center no-repeat;
+}
+.format-tiles .tile.unit8 a{
+    background: url(/theme/newimages/course/unit-8.png) center center no-repeat;
+}
+.format-tiles .tile.unit9 a{
+    background: url(/theme/newimages/course/unit-9.png) center center no-repeat;
+}
+.format-tiles .tile.unit10 a{
+    background: url(/theme/newimages/course/unit-10.png) center center no-repeat;
+}
+.format-tiles .tile.unit11 a{
+    background: url(/theme/newimages/course/unit-11.png) center center no-repeat;
+}
+.format-tiles .tile.unit12 a{
+    background: url(/theme/newimages/course/unit-12.png) center center no-repeat;
+}
+/*---pj---*/
+.format-tiles .tile.project1 a{
+    background: url(/theme/newimages/course/project-1.png) center center no-repeat;
+}
+.format-tiles .tile.project2 a{
+    background: url(/theme/newimages/course/project-2.png) center center no-repeat;
+}
+.format-tiles .tile.project3 a{
+    background: url(/theme/newimages/course/project-3.png) center center no-repeat;
+}
+.format-tiles .tile.project4 a{
+    background: url(/theme/newimages/course/project-4.png) center center no-repeat;
+}
+.format-tiles .tile.project5 a{
+    background: url(/theme/newimages/course/project-5.png) center center no-repeat;
+}
+.format-tiles .tile.project6 a{
+    background: url(/theme/newimages/course/project-6.png) center center no-repeat;
+}
+.format-tiles .tile.project7 a{
+    background: url(/theme/newimages/course/project-7.png) center center no-repeat;
+}
+.format-tiles .tile.project8 a{
+    background: url(/theme/newimages/course/project-8.png) center center no-repeat;
+}
+.format-tiles .tile.project9 a{
+    background: url(/theme/newimages/course/project-9.png) center center no-repeat;
+}
+.format-tiles .tile.project10 a{
+    background: url(/theme/newimages/course/project-10.png) center center no-repeat;
+}
+/*--------*/
+.format-tiles .tile[class*=mid] a{
+    background: url(/theme/newimages/course/mid.png) center center no-repeat;
+}
+.format-tiles .tile[class*=end] a{
+    background: url(/theme/newimages/course/end.png) center center no-repeat;
+}
+.format-tiles .tile[class*=final] a{
+    background: url(/theme/newimages/course/final.png) center center no-repeat;
+}
+.format-tiles .tile[class*=first] a,
+.format-tiles .tile[class*=welcome] a{
+    background: url(/theme/newimages/course/first.png) center center no-repeat;
+}
+.format-tiles .tile[class*=ixl] a{
+    background: url(/theme/newimages/course/IXL.png) center center no-repeat;
+}
+
+/*Add new bg for current day on calendar*/
+.calendarwrapper .calendartable td.day.today{
+    background: #1a73e8;
+    color: #fff;
+/*    border: 1px solid #63b5e3;*/
+}
+.calendarwrapper .calendartable td.day.today a{
+    color: #fff;
+}
+
+
+
+/*Contest - Card dasboard custom sumary*/
+.dashboard-card .card-body .k-cards{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 80%;
+    line-height: 0.9rem;
+/*    margin-top: 1em;*/
+}
+.dashboard-card .card-body .k-cards span{
+/*    width: max(125px, 48%);*/
+    width: 100%;
+    margin-bottom: 0.5rem;
+    color: #868e96;
+    position: relative;
+/*  margin: 0 0.5rem;*/
+}
+.dashboard-card .card-body .k-cards span:nth-child(2),
+.dashboard-card .card-body .k-cards span:nth-child(5){
+    margin-bottom: 1rem;
+}
+.dashboard-card .card-body .k-cards span:before,
+.dashboard-card .card-body .k-cards span:after{
+    content: '';
+    position: absolute;
+}
+.dashboard-card .card-body .k-cards span:not(:nth-child(1)):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(6)):not(:nth-child(7)):after {
+    width: 100%;
+    height: 1px;
+    bottom: -9px;
+    left: 0;
+    background: rgb(255,255,255);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,1)), color-stop(0%, rgba(183,185,186,1)), color-stop(0%, rgba(183,185,186,1)), color-stop(0%, rgba(183,185,186,1)), color-stop(30%, rgba(218,221,222,1)), to(rgba(255,255,255,1)));
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(183,185,186,1) 0%, rgba(183,185,186,1) 0%, rgba(183,185,186,1) 0%, rgba(218,221,222,1) 30%, rgba(255,255,255,1) 100%);
+}
+.k-wrapt-cards .text-truncate{
+    white-space: inherit;
+}
+.k-wrapt-cards .card-body{
+    padding: 0.725em !important;
+}
+.k-wrapt-cards .text-truncate + .dropdown{
+    position: absolute;
+    right: 1rem;
+}
+.k-cards {
+    margin-left: -0.4rem;
+}
+
+
+
+/*fix autozome input focus*/
+.lrn_textinput input{
+    font-size: 1em !important;
+}

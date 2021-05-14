@@ -1,0 +1,734 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.1/iframeResizer.min.js"></script>
+ 
+<iframe id="contentframe" width="100%" height="" src="https://www.youtube.com/embed/sNlycRiaeac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<script>iFrameResize({log:true})</script>
+ 
+
+<script>
+    $('#contentframe').iFrameResize( [{options}] );
+</script>
+
+<!--============================================================================-->
+
+<div class="k-button-collap">
+    <i class="fa fa-angle-right" aria-hidden="true"></i>
+    <script>
+        // Add button collap
+        $(document).on('load', "#region-main",function(){
+            if ($(this).hasClass('has-blocks')) {
+                $(this).toggleClass('has-blocks no-blocks');
+            }
+        };
+        $(document).on('click', ".k-button-collap",function(){
+            $('#page.container-fluid').toggleClass('k-overflow');
+            if ($(this).hasClass('k-active')) {
+                $(this).toggleClass('k-active k-reactive');
+            }
+            else if ($(this).hasClass('k-reactive')) {
+                $(this).toggleClass('k-active k-reactive');
+            }
+            else{
+                $(this).toggleClass('k-active');
+            }
+
+            $('#region-main').toggleClass('has-blocks no-blocks');
+        });                                
+    </script>
+</div>
+
+<div class="card-body">
+    <div class="k-cards">
+        <span><b>Level:</b> KK</span>
+        <span><b>Module:</b> 6</span>
+        <span><b>Duration:</b> Mar 24,2021 - Jul 14</span>
+        <span><b>Time:</b> 17:30:00 - 19:30:00</span>
+        <span><b>Days:</b> Tue/Thu</span>
+        <span><b>Center:</b> TC-BD1</span>
+        <span><b>Room:</b> 204</span>
+    </div>
+</div>
+
+<br>
+<!--
+
+<div class="dashboard-card">
+    <div class="card-body">
+        <div class="coursename">
+            <div class="text-muted">Level: JO1</div>
+            <div class="text-muted">Module: A</div>
+        </div>
+    </div>
+</div>
+-->
+<div class="card-deck">
+    <div class="card dashboard-card" role="listitem" data-region="course-content" data-course-id="54569">
+        <a href="#" tabindex="-1">
+            <div class="card-img dashboard-card-img" > 
+                <span class="sr-only">Course image</span> 
+            </div>
+        </a>
+        <div class="card-body pr-1 course-info-container" id="course-info-container-54569-3">
+            <div class="d-flex align-items-start">
+                <div class="w-100 text-truncate">
+                    <div class="text-muted muted d-flex mb-1 flex-wrap"> </div>
+                    <a href="#" class="coursename mr-2"> 
+                        <span id="favorite-icon-54569-3" data-region="favourite-icon" data-course-id="54569">
+                            <span class="text-primary hidden" data-region="is-favourite" aria-hidden="true">
+                                <i class="icon fa fa-star fa-fw " title="Starred course" aria-label="Starred course"></i>
+                                <span class="sr-only">Course is starred</span> 
+                            </span>
+                        </span> 
+                        <span class="sr-only">Course name</span> 
+                        <span class="multiline">H1YST-2A-Demo</span>
+                    </a>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <td><small class="text-muted"><b>Level: </b>JO1</small></td>
+                                <td><small class="text-muted"><b>Module: </b>A</small></td>
+                            </tr>
+                            <tr>
+                                <td><small class="text-muted"><b>Duration: </b>2020-11-12 to 2021-01-19</small></td>
+                                <td><small class="text-muted"><b>Learning time: </b>09:30:00 - 11:00:00</small></td>
+                            </tr>
+                            <tr>
+                                <td><small class="text-muted"><b>Days: </b>Mon/Tue/Wed/Thu/Fri</small></td>
+                                <td><small class="text-muted"><b>Room: </b>TBC at TC-HCMC1</small></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><small class="text-muted"><b>Course template: </b>SuperJuniors/1A/1.5hrs/Dur69/EnglishWorld/Online</small></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a> </a>
+                </div>
+                <div class="ml-auto dropdown">
+                    <button class="btn btn-link btn-icon icon-size-3 coursemenubtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                        <i class="icon fa fa-ellipsis-h fa-fw " aria-hidden="true"></i> 
+                        <span class="sr-only"> Actions for current course H1YJO-1A-Demo</span> 
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right"> 
+                        <a class="dropdown-item " href="#" data-action="add-favourite" data-course-id="54569" aria-controls="favorite-icon-54569-3">Star this course
+                            <div class="sr-only">Star for H1YJO-1A-Demo</div>
+                        </a> 
+                        <a class="dropdown-item hidden" href="#" data-action="remove-favourite" data-course-id="54569" aria-controls="favorite-icon-54569-3">Unstar this course
+                            <div class="sr-only">Remove star for H1YJO-1A-Demo</div>
+                        </a> 
+                        <a class="dropdown-item hidden" href="#" data-action="show-course" data-course-id="54569" aria-controls="favorite-icon-54569-3">Restore to view
+                            <div class="sr-only">Restore H1YJO-1A-Demo to view</div>
+                        </a> 
+                        <a class="dropdown-item " href="#" data-action="hide-course" data-course-id="54569" aria-controls="favorite-icon-54569-3">Remove from view
+                            <div class="sr-only">Remove H1YJO-1A-Demo from view</div>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card dashboard-card" role="listitem" data-region="course-content" data-course-id="54569">
+        <a href="#" tabindex="-1">
+            <div class="card-img dashboard-card-img" > 
+                <span class="sr-only">Course image</span> 
+            </div>
+        </a>
+        <div class="card-body pr-1 course-info-container" id="course-info-container-54569-3">
+            <div class="d-flex align-items-start">
+                <div class="w-100 text-truncate">
+                    <div class="text-muted muted d-flex mb-1 flex-wrap"> </div>
+                    <a href="#" class="coursename mr-2"> 
+                        <span id="favorite-icon-54569-3" data-region="favourite-icon" data-course-id="54569">
+                            <span class="text-primary hidden" data-region="is-favourite" aria-hidden="true">
+                                <i class="icon fa fa-star fa-fw " title="Starred course" aria-label="Starred course"></i>
+                                <span class="sr-only">Course is starred</span> 
+                            </span>
+                        </span> 
+                        <span class="sr-only">Course name</span> 
+                        <span class="multiline">H1YJO-1A-Demo</span>
+                    </a>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <td><small class="text-muted"><b>Level: </b>JO1</small></td>
+                                <td><small class="text-muted"><b>Module: </b>A</small></td>
+                            </tr>
+                            <tr>
+                                <td><small class="text-muted"><b>Duration: </b>2020-11-12 to 2021-01-19</small></td>
+                                <td><small class="text-muted"><b>Learning time: </b>09:30:00 - 11:00:00</small></td>
+                            </tr>
+                            <tr>
+                                <td><small class="text-muted"><b>Days: </b>Mon/Tue/Wed/Thu/Fri</small></td>
+                                <td><small class="text-muted"><b>Room: </b>TBC at TC-HCMC1</small></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><small class="text-muted"><b>Course template: </b>SuperJuniors/1A/1.5hrs/Dur69/EnglishWorld/Online</small></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a> </a>
+                </div>
+                <div class="ml-auto dropdown">
+                    <button class="btn btn-link btn-icon icon-size-3 coursemenubtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                        <i class="icon fa fa-ellipsis-h fa-fw " aria-hidden="true"></i> 
+                        <span class="sr-only"> Actions for current course H1YJO-1A-Demo</span> 
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right"> 
+                        <a class="dropdown-item " href="#" data-action="add-favourite" data-course-id="54569" aria-controls="favorite-icon-54569-3">Star this course
+                            <div class="sr-only">Star for H1YJO-1A-Demo</div>
+                        </a> 
+                        <a class="dropdown-item hidden" href="#" data-action="remove-favourite" data-course-id="54569" aria-controls="favorite-icon-54569-3">Unstar this course
+                            <div class="sr-only">Remove star for H1YJO-1A-Demo</div>
+                        </a> 
+                        <a class="dropdown-item hidden" href="#" data-action="show-course" data-course-id="54569" aria-controls="favorite-icon-54569-3">Restore to view
+                            <div class="sr-only">Restore H1YJO-1A-Demo to view</div>
+                        </a> 
+                        <a class="dropdown-item " href="#" data-action="hide-course" data-course-id="54569" aria-controls="favorite-icon-54569-3">Remove from view
+                            <div class="sr-only">Remove H1YJO-1A-Demo from view</div>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card dashboard-card" role="listitem" data-region="course-content" data-course-id="54569">
+        <a href="#" tabindex="-1">
+            <div class="card-img dashboard-card-img" > 
+                <span class="sr-only">Course image</span> 
+            </div>
+        </a>
+        <div class="card-body pr-1 course-info-container" id="course-info-container-54569-3">
+            <div class="d-flex align-items-start">
+                <div class="w-100 text-truncate">
+                    <div class="text-muted muted d-flex mb-1 flex-wrap"> </div>
+                    <a href="#" class="coursename mr-2"> 
+                        <span id="favorite-icon-54569-3" data-region="favourite-icon" data-course-id="54569">
+                            <span class="text-primary hidden" data-region="is-favourite" aria-hidden="true">
+                                <i class="icon fa fa-star fa-fw " title="Starred course" aria-label="Starred course"></i>
+                                <span class="sr-only">Course is starred</span> 
+                            </span>
+                        </span> 
+                        <span class="sr-only">Course name</span> 
+                        <span class="multiline">Course Template</span>
+                    </a>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <td><small class="text-muted"><b>Level: </b>JO1</small></td>
+                                <td><small class="text-muted"><b>Module: </b>A</small></td>
+                            </tr>
+                            <tr>
+                                <td><small class="text-muted"><b>Duration: </b>2020-11-12 to 2021-01-19</small></td>
+                                <td><small class="text-muted"><b>Learning time: </b>09:30:00 - 11:00:00</small></td>
+                            </tr>
+                            <tr>
+                                <td><small class="text-muted"><b>Days: </b>Mon/Tue/Wed/Thu/Fri</small></td>
+                                <td><small class="text-muted"><b>Room: </b>TBC at TC-HCMC1</small></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><small class="text-muted"><b>Course template: </b>SuperJuniors/1A/1.5hrs/Dur69/EnglishWorld/Online</small></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a> </a>
+                </div>
+                <div class="ml-auto dropdown">
+                    <button class="btn btn-link btn-icon icon-size-3 coursemenubtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                        <i class="icon fa fa-ellipsis-h fa-fw " aria-hidden="true"></i> 
+                        <span class="sr-only"> Actions for current course H1YJO-1A-Demo</span> 
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right"> 
+                        <a class="dropdown-item " href="#" data-action="add-favourite" data-course-id="54569" aria-controls="favorite-icon-54569-3">Star this course
+                            <div class="sr-only">Star for H1YJO-1A-Demo</div>
+                        </a> 
+                        <a class="dropdown-item hidden" href="#" data-action="remove-favourite" data-course-id="54569" aria-controls="favorite-icon-54569-3">Unstar this course
+                            <div class="sr-only">Remove star for H1YJO-1A-Demo</div>
+                        </a> 
+                        <a class="dropdown-item hidden" href="#" data-action="show-course" data-course-id="54569" aria-controls="favorite-icon-54569-3">Restore to view
+                            <div class="sr-only">Restore H1YJO-1A-Demo to view</div>
+                        </a> 
+                        <a class="dropdown-item " href="#" data-action="hide-course" data-course-id="54569" aria-controls="favorite-icon-54569-3">Remove from view
+                            <div class="sr-only">Remove H1YJO-1A-Demo from view</div>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function addClassCard(){
+        var dashCard = $('.dashboard-card');
+        console.log("ok");
+        dashCard.each(function(){
+            var classKey =  $(this).find('.multiline'),
+                removeSpace = classKey.text().replace(/ /g,'').replaceAll(':','').toLowerCase(),
+                levelClass= removeSpace.split('-')[0].slice(-1),
+                moduleClass= removeSpace.split('-')[1];
+            $(this).closest(dashCard).addClass(levelClass).addClass('k' + moduleClass);
+        });
+    }
+    $(document).ready(function() {
+        // Get level and module add to class
+        addClassCard();
+    });
+</script>
+
+
+
+
+<style>
+    .container {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        font-size: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        background: #ffffff;
+    }
+
+    h2.title {
+        position: relative;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        font-size: 30px;
+        color: #222222;
+    }
+
+    h2.title::after {
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 3px;
+        left: calc(50% - 25px);
+        bottom: 0;
+        background: #222222;
+    }
+
+    p {
+        position: relative;
+        margin: 15px auto;
+        font-size: 16px;
+        color: #222222;
+    }
+
+    .btn {
+        width: 100px;
+        position: relative;
+        display: inline-block;
+        margin: 15px;
+        padding: 12px 27px;
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: #999999;
+        background: #ffffff;
+        border: 2px solid #14a9fe;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: ease-out 0.5s;
+        -webkit-transition: ease-out 0.5s;
+        -moz-transition: ease-out 0.5s;
+    }
+
+    .btn.btn-border-1::after,
+    .btn.btn-border-1::before {
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 0%;
+        visibility: hidden;
+    }
+
+    .btn.btn-border-1::after {
+        bottom: -1px;
+        right: -1px;
+        border-left: 2px solid #222222;
+        border-bottom: 2px solid #222222;
+        transition: width .1s ease .1s, height .1s ease, visibility 0s .2s;
+    }
+
+    .btn.btn-border-1::before {
+        top: -1px;
+        left: -1px;
+        border-top: 2px solid #222222;
+        border-right: 2px solid #222222;
+        transition: width .1s ease .3s, height .1s ease .2s, visibility 0s .4s;
+    }
+
+    .btn.btn-border-1:hover {
+        animation: pulse 1s ease-out .4s;
+        color: #222222;
+/*        border-color: transparent;*/
+    }
+
+    .btn.btn-border-1:hover::after,
+    .btn.btn-border-1:hover::before {
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        visibility: visible;
+        transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+    }
+
+    .btn.btn-border-1:hover::after {
+        transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+    }
+
+    .btn.btn-border-1:hover::before {
+        transition: width .1s ease, height .1s ease .1s;
+    }
+    div .khoa[class*=tain]{
+        background: red;
+    }
+</style>
+
+<div>
+    <div class=" container khoa ">
+        <a class="btn btn-border-1" href="">I'm a button</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<style>
+    a{
+        text-decoration: none;
+        display: block;
+    }
+    [class^=btn-] {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: 80px;
+        max-width: 250px;
+        margin: 1rem auto;
+        text-transform: uppercase;
+        border: 1px solid currentColor;
+        text-align: center;
+    }
+    .btn-6 {
+       color: #6acf8d;
+    }
+    .btn-6 span {
+       position: absolute;
+       display: block;
+       width: 0;
+       height: 0;
+       border-radius: 50%;
+       background-color: #307749;
+       transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+       transform: translate(-50%, -50%);
+       z-index: -1;
+    }
+    .btn-6:hover {
+       color: #d3f1de;
+    }
+    .btn-6:hover span {
+       width: 225%;
+       height: 562.5px;
+    }
+    .btn-6:active {
+       background-color: #50c779;
+    }
+    
+</style>
+<a class="btn-6" href="#">Position Aware<span></span></a>
+
+<script>
+$(function() {  
+    $('.btn-6')
+        .on('mouseenter', function(e) {
+            var parentOffset = $(this).offset(),
+            relX = e.pageX - parentOffset.left,
+            relY = e.pageY - parentOffset.top;
+            $(this).find('span').css({top:relY, left:relX})
+        })
+        .on('mouseout', function(e) {
+            var parentOffset = $(this).offset(),
+            relX = e.pageX - parentOffset.left,
+            relY = e.pageY - parentOffset.top;
+            $(this).find('span').css({top:relY, left:relX})
+        });
+    $('[href=#]').click(function(){return false});
+});
+</script>
+
+
+
+
+
+
+<style>
+    .unit1{
+      background : green;
+    }
+    .unit2{
+      background : red;
+    }
+    .unit3{
+      background : blue;
+    }
+</style>
+<ul id="multi_section_tiles">
+    <li class="tile">
+        <a class="tile-link">
+            <div class="tile-content"> 
+                <span class="tile-textinner">
+                    <h3>Unit 1.3</h3>
+                </span> 
+            </div>
+        </a>
+    </li>
+    <li class="tile">
+        <a class="tile-link">
+            <div class="tile-content"> 
+                <span class="tile-textinner">
+                      <h3>Unit 3.2</h3>
+                </span> 
+            </div>
+        </a>
+    </li>
+    <li class="tile">
+        <a class="tile-link">
+            <div class="tile-content"> 
+                <span class="tile-textinner">
+                    <h3>Unit-2.8</h3>
+                </span> 
+            </div>
+        </a>
+    </li>
+</ul>
+
+<script>
+    var classText = $('#multi_section_tiles li.tile');
+    classText.each(function(){
+        var content = $(this).text().replace(/ /g,'').replaceAll('-','').toLowerCase().split('.')[0]
+        $(this).addClass(content);
+    });
+    
+    
+    
+//    var classText = $('#multi_section_tiles li.tile:contains(Unit)');
+//    classText.each(function(index){
+//        var content = $(this).text().replace(/ /g,'').toLowerCase()
+//        $(this).addClass(content);
+//    });
+    
+//    var className = $(this).html().replace(' ', '').toLowerCase();
+</script>
+
+
+<br><br><br><br><br>
+<style>
+    .btn-browseup {
+        padding-top: 10px;
+        position: relative;
+    }
+
+    img {
+        position: absolute;
+        cursor: pointer;
+        /* below means you can click through the image onto the invisible input */
+        pointer-events: none;
+        width:50px;
+        top: 50%;
+        transform: translatey(-50%);
+    }
+
+    input[type=file] {
+        margin-left: -25px;
+        opacity: 0;
+        width: 70px;
+    }
+
+    .btn-browseup:after{
+        content: attr(data-content);
+    }
+    
+    
+    .k-hover{
+        position: relative;
+        display: inline-block;
+        margin: 15px;
+        padding: 12px 27px;
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: #999999;
+        background: #ffffff;
+        border: 3px solid #999999;
+        cursor: pointer;
+        transition: ease-out 0.5s;
+        -webkit-transition: ease-out 0.5s;
+        -moz-transition: ease-out 0.5s;
+    }
+    
+    .k-hover::after,
+    .k-hover::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        transition: .5s;
+    }
+
+    .k-hover::after {
+        top: -9px;
+        left: -9px;
+        border-top: 3px solid transparent;
+        border-left: 3px solid transparent;
+    }
+
+    .k-hover::before {
+        bottom: -9px;
+        right: -9px;
+        border-bottom: 3px solid transparent;
+        border-right: 3px solid transparent;
+    }
+
+    .k-hover:hover {
+        color: #222222;
+    }
+
+    .k-hover:hover::after,
+    .k-hover:hover::before {
+        width: calc(100% + 15px);
+        height: calc(100% + 15px);
+        border-color: #222222;
+    }
+    
+</style>
+   
+<div class="btn-browseup" data-content="Something is happening"> 
+    <span class="wpcf7-form-control-wrap">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRSZJ5Qtnz_eutCQeLs-5tnHPFubgFz2TjnpkkMwgIIqIG93t1z" alt="">
+
+
+        <input type="file" name="fileToUpload">
+    </span>
+        
+</div>
+<br>
+<div class="btn-browseup" data-content="Something ">
+    <span data-content="Something is happening" class="wpcf7-form-control-wrap">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRSZJ5Qtnz_eutCQeLs-5tnHPFubgFz2TjnpkkMwgIIqIG93t1z" alt="">
+        <input type="file" name="fileToUpload">
+    </span>
+</div>
+
+
+
+<script>
+    // Hiện tên khi upload file
+    $(document).on('change', ".btn-browseup input[type='file']",function(){
+        if ($(this).val()) {
+
+            var filename = $(this).val().split("\\"),
+                detailname = $(this).parents('.btn-browseup');
+            console.log(detailname);
+            filename = filename[filename.length-1];
+            detailname.attr('data-content', filename);
+        }
+    });
+</script>
+
+<br>
+<a class="k-hover" href="">I'm a button</a>
+<br><br><hr><br><br>
+
+
+
+<style>
+
+    .active{
+        display: block;
+        opacity: 1;
+    }
+
+    .inactive{
+        display: none;
+        opacity: 0;
+    }
+</style>
+    <div class="custom-tabs">
+        <div class="eael-advance-tabs eael-tabs-horizontal">
+            <div class="eael-tabs-nav">
+                <ul class="eael-tab-inline-icon">
+                    <li class="inactive">1</li>
+                    <li class="active">2</li>
+                    <li class="inactive">3</li>
+                </ul>
+            </div>
+            
+            <div class="eael-tabs-content">
+                <div class="clearfix inactive">11111</div>
+                <div class="clearfix active">2222 <button class="btn-apply-now">swap to</button></div>
+                <div class="clearfix inactive">333333</div>
+            </div>
+        </div>
+    </div>
+    
+
+
+<script>
+    $(document).on('click', ".custom-tabs .btn-apply-now",function(){
+        var content = $(".custom-tabs .eael-tabs-content > div"), 
+            nav = $(".custom-tabs .eael-tabs-nav li");
+        
+        if (nav.hasClass("active")) {
+            nav.removeClass("active").addClass("inactive");
+            nav.last().removeClass("inactive").addClass("active"); 
+        }
+
+        if (nav.hasClass("active")) {
+            content.removeClass("active").addClass("inactive");
+            content.last().removeClass("inactive").addClass("active"); 
+        }
+    });
+</script>
+
+
+
+
+<style>
+.path-site li.activity>div, 
+.path-course-view li.activity>div,
+.section .activity .contentwithoutlink, 
+.section .activity .activityinstance,
+.section .activity .availabilityinfo, 
+.section .activity .contentafterlink{
+    padding: 0;
+    margin: 0;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
